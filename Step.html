@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Suicide Rate vs Weather - Data </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <!-- TODO: collapsable not working. NavBar with Collapsable Menu--> 
+     <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="index.html">Home</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"></li>
+              <li><a href="Data.html">Data</a></li>
+              <li><a href="Step.html">Steps</a></li>
+              <li><a href="Aboutus.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+  <div class="container">
+
+    <!-- Row 1, Page Title -->
+    <div class="row">
+      <div class="col-md-12">
+        <h1> ETL | Project's Steps </h1>
+        <hr>
+        <br><br>
+      </div>
+    </div>
+
+    <!-- Row 2, Steps -->
+    <div class="row">
+      <div class="col-md-8">
+        <h4 class="heading"><strong>Data Extraction</strong></h4>
+        <ul>
+          <li>Source 
+            <ul>
+              <li><a href="https://www.who.int/healthinfo/statistics/mortality_rawdata/en/">World Health Organization</a>
+                <ul>
+                  <li>Mortality Database (CSV)</li>
+                  <li>Table of countries-years with mortality and population data (Last updated: 01 December 2018)</li>
+                  <li>Table of country codes and names</li>
+                  <li>Table of reference populations and live births (Last updated: 01 December 2018)</li>
+                  <li>List with detailed mortality data (Last updated: 01 December 2018)</li>
+                </ul>
+              </li> 
+              <br>
+              <li><a href="https://datahub.io/core/global-temp">Data Hub</a><small> Quality Data to Integrate</small></li>
+          </ul></li>
+        </ul>
+        
+      </div>
+
+      <!-- Row 2, quotation-->
+      <div class="col-md-4">
+        <h4 class="heading"> About the data</h4>
+        <div class="notepaper">
+            <figure class="quote">
+              <blockquote class="curly-quotes" cite="https://www.youtube.com/watch?v=qYLrc9hy0t0">
+                Note that vital registration data may be 100% complete for 
+                the population covered, but not include full coverage of
+                 deaths in the country. 
+                 <small>If you want to read more go <a href="https://www.who.int/healthinfo/statistics/mortality_rawdata/en/index1.html">here</a></small>
+              </blockquote>
+              <figcaption class="quote-by">— World Healt Organization</figcaption>
+            </figure>
+          </div>
+      </div>
+    </div>
+    <br>
+      <!-- Row 3, Transformation -->
+      <div class="row">
+          <div class="col-md-8">
+            <h4 class="heading"><strong>Data Transformation</strong></h4>
+            <ul>
+              <li> SQL 
+                <ul>
+                  <li> Create database and tables </li>
+                  <li> Set primary keys if each table</li>
+                </ul>
+              </li>
+              <li> Jupyter Notebook
+                <ul>
+                  <li> Load Data and join tables based on primary keys </li>
+                  <li> Data Cleaning. Drop columns of XX, XX </li>
+                  <li> Data Visualizacions (Matplotlib?) </li>
+                  <li> Transform jupyter notebook into python</li>
+                </ul>
+              </li>
+              <li> SQL
+                  <ul>
+                    <li> Upload tables into SQL</li>
+                    <li> Check that tables are correct</li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h4>Download Proposal</h4>
+             <!-- proposal button-->
+            <div class="container">
+            <form method="get" target="Proposal.pdf" action="Proposal.pdf">
+            <button type="submit" class="btn">Proposal</button>
+            </form>
+            </div>
+          </div>
+
+      <!-- Row 4, Loading -->
+      <div class="row">
+          <div class="col-md-8">
+            <h4 class="heading"><strong>Data Load</strong></h4>
+            <ul>
+              <li> HTML 
+                <ul>
+                  <li> Create website format </li>
+                  <li> Load data into each webpage </li>
+                </ul>
+              </li>
+            </ul>
+            
+          </div>
+    
+  </div>
+</body>
+
+</html>
+

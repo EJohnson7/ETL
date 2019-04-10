@@ -1,0 +1,35 @@
+#gif {
+    width: 324px;
+    height: 461px; 
+}
+
+.jumbotron {
+    background-image:url(https://hridaya-yoga.com/wp-content/uploads/RESOURCES.WHATISHRIDAYA-IMG_4678-02-LR.jpg);
+    height:400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom:1px solid #ff6a00;
+    color: rgb(170, 24, 24);
+    font-family: 'Trebuchet MS';
+  }
+  .jumbotron .container {
+    position:relative;
+    top:50px;
+  }
+
+
+/* Adding this to the head in the index page will change the background 
+<style>
+      body {
+         background-image: url("https://hridaya-yoga.com/wp-content/uploads/RESOURCES.WHATISHRIDAYA-IMG_4678-02-LR.jpg");
+      }
+   </style>
+*/
+
+.list, .landpage, .paragraph {
+    color: whitesmoke;
+}
+
+
+
+
