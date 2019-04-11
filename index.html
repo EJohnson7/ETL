@@ -2,65 +2,61 @@
 <html lang="en">
 
 <head>
+  <title>Suicide vs Weather </title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Suicide Rate vs Weather </title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--
   <style>
       body {
          background-image: url("http://www.toca-ch.com/data/walls/27/22109120.jpg");
       }
-   </style>
+   </style>-->
   </head>
 
 <body>
  
   <div class="container">
-
-    <div class="jumbotron" class="jumbotron text-center">
-      <h1>Suicide Rate vs Weather</h1>
-      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Follow The Light</a></p>
+    <div class="row">
+      <div class="jumbotron" class="jumbotron text-center">
+        <h1 class="jumbo_font">Suicide vs Weather</h1>
+        <p class="jumbo_btn"><a class="btn btn-primary btn-lg" href="/scrape" role="button">Follow The Light</a></p>  
+      </div>
     </div>
     
-    <!--row1 -->
+    <!-- New Row-->
     <div class="row">
       <div class="col-md-8">
-        <h4 class="heading" class="landpage">Does the climate affect the suicide rate?</h4>
-        <p class="paragraph">We believe warmer climate has a direct correlation with the increase in suicide rate. We are using two datasets.</p>
-        <br><br>
-        <ul class="list">
-          <li>download data</li>
-          <li>set primary keys</li>
-          <li>upload into jupiter notebook</li>
-          <li>clean data</li>
-          <li>Summary suicide rate by year</li>
-          <li>Suicide rate, years</li>
-          <li>Suicide rate, years</li>        
-        </p>
+        <h3 class="heading" class="landpage">Does the climate affect the suicide rate?</h3>
+        <p class="paragraph">Have you ever wondered about what can trigger suicides among the world? Some of us can think
+            that age, relationships or even finance are direct causes of suicides -and this may be true!- but
+            what about the weather? </p>
         <br><br>
       </div>
     </div>
 
-      <div class="col-md-4">
-        <img id="gif" src="giphy.gif"></img>
-      </div>
-    
-      <!-- row 2-->
+    <!-- New Row, Buttons-->
     <div class="row">
-        <div class="col-md-4">
-          <a href="Step.html" class="heading"><h4>Step by Step</h4></a>
-          </div>
-      <div class="col-md-4">
-        <a href="Data.html" class="heading"><h4>The Data</h4></a>
-      </div>
-      
-      <div class="col-md-4">
-        <a href="Aboutus.html" class="heading"><h4>About us</h4></a>
-      </div>
+        <div class="col-sm-4 col-md-4">
+          <a href="Step.html" type="button" class="btn btn-default" role="button" class="landpage_btn">Step by Step</a>
+        </div>
+        <div class="col-sm-4  col-md-4">
+          <a href="Data.html" type="button" class="btn btn-default" role="button" class="landpage_btn">Data</a>
+        </div>  
+        <div class="col-sm-4  col-md-4">
+          <button type="button" href="Aboutus.html" class="btn btn-outline-light" class="landpage_btn">About Us</button>
+        </div>
     </div>
-    
+  
+    <br>
+
+    <div class="row">
+      <div class="col-md-12">
+        <img id="gif" src="giphy.gif" class="landpage_img"></img>
+      </div>
     
   </div>
 </body>

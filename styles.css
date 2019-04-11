@@ -9,13 +9,23 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom:1px solid #ff6a00;
-    color: rgb(170, 24, 24);
+    color: rgb(241, 11, 11);
     font-family: 'Trebuchet MS';
   }
   .jumbotron .container {
     position:relative;
     top:50px;
   }
+
+.jumbo_font {
+  margin-top: 12%;
+  margin-left: 25%;
+}
+
+.jumbo_btn {
+  margin-top: 5%;
+  margin-left: 40%;
+}
 
 
 /* Adding this to the head in the index page will change the background 
@@ -26,10 +36,33 @@
    </style>
 */
 
-.list, .landpage, .paragraph {
+.list, .landpage, .paragraph, .title {
     color: whitesmoke;
 }
 
+.heading {
+  color: rgb(250, 31, 15);
+}
 
+.landpage_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
+.landpage_btn {
+  margin-left: 50%;
+}
 
+body {
+  background-image: url("http://www.toca-ch.com/data/walls/27/22109120.jpg");
+}
+
+.name_c {
+  color: whitesmoke;
+}
+
+.quote-by, .curly-quotes {
+  color:rgb(153, 153, 34);
+}

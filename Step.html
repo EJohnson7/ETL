@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
+  <title>Suicide vs Weather - Step by Step </title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Suicide Rate vs Weather - Data </title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-     <!-- TODO: collapsable not working. NavBar with Collapsable Menu--> 
+     <!--NavBar with Collapsable Menu--> 
      <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -40,7 +40,7 @@
     <!-- Row 1, Page Title -->
     <div class="row">
       <div class="col-md-12">
-        <h1> ETL | Project's Steps </h1>
+        <h1 class="title"> ETL | Project's Steps </h1>
         <hr>
         <br><br>
       </div>
@@ -51,9 +51,11 @@
       <div class="col-md-8">
         <h4 class="heading"><strong>Data Extraction</strong></h4>
         <ul>
-          <li>Source 
+          <li class="list">Source 
             <ul>
-              <li><a href="https://www.who.int/healthinfo/statistics/mortality_rawdata/en/">World Health Organization</a>
+              <li><a href="https://www.who.int/healthinfo/statistics/mortality_rawdata/en/">World Health Organization (WHO)</a>
+                <br>
+                <small>The Mortality Data base comprises deaths registered in national vital registration systems. Data are included only for countries reporting data properly coded according to the <a target="https://www.cdc.gov/nchs/icd/icd10cm.htm" href="https://www.cdc.gov/nchs/icd/icd10cm.htm"> International Classification of Diseases (ICD). </a></small>
                 <ul>
                   <li>Mortality Database (CSV)</li>
                   <li>Table of countries-years with mortality and population data (Last updated: 01 December 2018)</li>
@@ -63,7 +65,7 @@
                 </ul>
               </li> 
               <br>
-              <li><a href="https://datahub.io/core/global-temp">Data Hub</a><small> Quality Data to Integrate</small></li>
+              <li><a target="https://datahub.io/core/global-temp" href="https://datahub.io/core/global-temp">Data Hub</a><small> Quality Data to Integrate</small></li>
           </ul></li>
         </ul>
         
@@ -78,7 +80,7 @@
                 Note that vital registration data may be 100% complete for 
                 the population covered, but not include full coverage of
                  deaths in the country. 
-                 <small>If you want to read more go <a href="https://www.who.int/healthinfo/statistics/mortality_rawdata/en/index1.html">here</a></small>
+                 <small class="">If you want to read more go <a href="https://www.who.int/healthinfo/statistics/mortality_rawdata/en/index1.html">here</a></small>
               </blockquote>
               <figcaption class="quote-by">— World Healt Organization</figcaption>
             </figure>
@@ -91,31 +93,47 @@
           <div class="col-md-8">
             <h4 class="heading"><strong>Data Transformation</strong></h4>
             <ul>
-              <li> SQL 
+              <li class="list"> Jupyter Notebook
+                <ul>
+                  <li> Load CSV files, Split unique column, review years of every table </li>
+                  <li> Data Cleaning 
+                    <ul>
+                      <li>
+                        Rename Columns
+                      </li>
+                      <li>
+                        Filter by Mortality type (Suicide) 
+                      </li>
+                      <li>
+                        Select columns to use (Year, Mortality_type)
+                      </li>
+                      <li>
+                        Load into SQL the cleaned databases
+                      </li>
+                    </ul>
+                   </li>
+                </ul>
+              </li>
+              <li class="list"> SQL 
                 <ul>
                   <li> Create database and tables </li>
                   <li> Set primary keys if each table</li>
+                  <li> join databases based on primary keys</li>
                 </ul>
               </li>
-              <li> Jupyter Notebook
-                <ul>
-                  <li> Load Data and join tables based on primary keys </li>
-                  <li> Data Cleaning. Drop columns of XX, XX </li>
-                  <li> Data Visualizacions (Matplotlib?) </li>
-                  <li> Transform jupyter notebook into python</li>
-                </ul>
-              </li>
-              <li> SQL
+              <li class="list"> Jupyter Notebook
                   <ul>
-                    <li> Upload tables into SQL</li>
-                    <li> Check that tables are correct</li>
+                    <li> upload unique table form SQL</li>
+                    <li> review integrity of information</li>
+                    <li> Data Visualizacions (Matplotlib?) </li>
+                    <li> Transform jupyter notebook into python</li>
                     </ul>
                 </li>
             </ul>
           </div>
 
           <div class="col-md-4">
-            <h4>Download Proposal</h4>
+            <h4 class="list">Download Proposal</h4>
              <!-- proposal button-->
             <div class="container">
             <form method="get" target="Proposal.pdf" action="Proposal.pdf">
@@ -129,9 +147,9 @@
           <div class="col-md-8">
             <h4 class="heading"><strong>Data Load</strong></h4>
             <ul>
-              <li> HTML 
+              <li class="list"> HTML 
                 <ul>
-                  <li> Create website format </li>
+                  <li> Have fun </li>
                   <li> Load data into each webpage </li>
                 </ul>
               </li>
