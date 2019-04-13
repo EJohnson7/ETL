@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Suicide vs Weather - Step by Step </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <!--NavBar with Collapsable Menu--> 
+     <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="index.html">Home</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"></li>
+              <li><a href="followthelight.html">Plots and Data</a></li>
+              <li><a href="Step.html">Steps</a></li>
+              <li><a href="Aboutus.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+  <div class="container">
+
+    <!-- New Row, Page Title -->
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="title"> ETL | Conclusions </h1>
+        <hr>
+        <br><br>
+      </div>
+    </div>
+
+    <!-- New Row -->
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="plot_title"> Climate vs All Countries Suicide</h3>
+        <img src="Jupyter Notebook and more/Climate vs All Countries Suicide.png">
+      </div>
+    
+      <div class="col-md-6">
+        <h5 class="plot_paragraph">Based on several articles reviewed by the team we were under the assumption that a rise in the global temperature would directly impact the increase in suicide rates. We were able to analyze data from Kaggle and DataHub and extract information that was necessary to come to our conclusion.
+            The conclusion: A Rise in global temperature associated with the decrease in suicide rates globally.
+            There are probably external factors that have led to the decrease in suicide rates over the years which can include but are not limited to the increase in mental health awareness and services. Those factors were not explored.</h5>
+        <br>
+            <p class="plot_paragraph" >For more ideas and inspirations go <a href="https://www.nature.com/articles/d41586-018-05783-w">here</a> and <a href="https://www.theatlantic.com/science/archive/2018/07/high-temperatures-cause-suicide-rates-to-increase/565826/">here </a></p>
+      </div>
+  </div>
+    <br>
+        
+  <div class="row">
+        <div class="col-md-6">      
+    <div class="col-md-6">
+        <h3 class="plot_title"> Climate vs Countries HDI Greater than .85</h3>
+        <img src="Jupyter Notebook and more/Climate vs Countries HDI Greater than .85.png">
+    </div>
+  </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">      
+      <div class="col-md-6">
+          <h3 class="plot_title"> Climate vs Countries Suicide Greater than 5 per 100k</h3>
+          <img src="Jupyter Notebook and more/Climate vs Countries Suicides Greater than 5 per 100k.png">
+      </div>
+    </div>
+        </div>
+
+        <br>
+      
+    <div class="row">
+        <div class="col-md-2">
+          <!-- proposal button-->
+          <h4 class="list">Download The Data</h4>            
+          <form method="get" target="Jupyter Notebook and more/group_suicide.csv" action="Jupyter Notebook and more/group_suicide.csv">
+          <button type="submit" class="btn">Data</button>
+          </form>
+        </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
+

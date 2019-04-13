@@ -27,7 +27,7 @@
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
               <li class="active"></li>
-              <li><a href="Data.html">Data</a></li>
+              <li><a href="followthelight.html">Plots and Data</a></li>
               <li><a href="Step.html">Steps</a></li>
               <li><a href="Aboutus.html">About</a></li>
             </ul>
@@ -53,15 +53,11 @@
         <ul>
           <li class="list">Source 
             <ul>
-              <li><a href="https://www.who.int/healthinfo/statistics/mortality_rawdata/en/">World Health Organization (WHO)</a>
+              <li><a href="https://www.kaggle.com/lmorgan95/r-suicide-rates-in-depth-stats-insights">Kaggle</a>
                 <br>
                 <small>The Mortality Data base comprises deaths registered in national vital registration systems. Data are included only for countries reporting data properly coded according to the <a target="https://www.cdc.gov/nchs/icd/icd10cm.htm" href="https://www.cdc.gov/nchs/icd/icd10cm.htm"> International Classification of Diseases (ICD). </a></small>
                 <ul>
                   <li>Mortality Database (CSV)</li>
-                  <li>Table of countries-years with mortality and population data (Last updated: 01 December 2018)</li>
-                  <li>Table of country codes and names</li>
-                  <li>Table of reference populations and live births (Last updated: 01 December 2018)</li>
-                  <li>List with detailed mortality data (Last updated: 01 December 2018)</li>
                 </ul>
               </li> 
               <br>
@@ -77,9 +73,7 @@
         <div class="notepaper">
             <figure class="quote">
               <blockquote class="curly-quotes" cite="https://www.youtube.com/watch?v=qYLrc9hy0t0">
-                Note that vital registration data may be 100% complete for 
-                the population covered, but not include full coverage of
-                 deaths in the country. 
+                Note that data are included only for countries reporting data properly coded according to the International Classification of Diseases (ICD).
                  <small class="">If you want to read more go <a href="https://www.who.int/healthinfo/statistics/mortality_rawdata/en/index1.html">here</a></small>
               </blockquote>
               <figcaption class="quote-by">— World Healt Organization</figcaption>
@@ -95,38 +89,24 @@
             <ul>
               <li class="list"> Jupyter Notebook
                 <ul>
-                  <li> Load CSV files, Split unique column, review years of every table </li>
-                  <li> Data Cleaning 
-                    <ul>
-                      <li>
-                        Rename Columns
-                      </li>
-                      <li>
-                        Filter by Mortality type (Suicide) 
-                      </li>
-                      <li>
-                        Select columns to use (Year, Mortality_type)
-                      </li>
-                      <li>
-                        Load into SQL the cleaned databases
-                      </li>
-                    </ul>
-                   </li>
+                  <li> Load CSV file </li>
+                  <li> Check table and data types</li>
                 </ul>
               </li>
               <li class="list"> SQL 
                 <ul>
-                  <li> Create database and tables </li>
-                  <li> Set primary keys if each table</li>
-                  <li> join databases based on primary keys</li>
+                  <li> Create database and table </li>
+                  <li> Drop columns</li>
+                  <li> Connect to jupyter notebook and upload table</li>
                 </ul>
               </li>
               <li class="list"> Jupyter Notebook
                   <ul>
-                    <li> upload unique table form SQL</li>
-                    <li> review integrity of information</li>
-                    <li> Data Visualizacions (Matplotlib?) </li>
-                    <li> Transform jupyter notebook into python</li>
+                    <li> Review integrity of information</li>
+                    <li> Drop columns </li>
+                    <li> Obtain sum of population and suicide by year</li>
+                    <li> Create a column of Suicide Rate by 100,000 (Suidide*100000/Population) </li>
+                    <li> Plot </li>
                     </ul>
                 </li>
             </ul>

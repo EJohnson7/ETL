@@ -66,3 +66,11 @@ body {
 .quote-by, .curly-quotes {
   color:rgb(153, 153, 34);
 }
+
+.plot_title {
+  color:whitesmoke;
+}
+
+.plot_paragraph {
+  color:whitesmoke;
+}
