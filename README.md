@@ -1,5 +1,6 @@
 # Project Suicide vs Weather
-
+## Introduction
+This is an Extract Transform Load in which we obtained climate data and Kaggle suicide data and loaded the relevant data into SQL and used it to make some visualizations to see if there are any trends.
 
 ## Getting Started 
 If you want to check only results, please go to the website [here](https://cynthiahuallanca.github.io/ETL/)  
